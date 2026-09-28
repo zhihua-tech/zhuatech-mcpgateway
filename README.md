@@ -1,5 +1,7 @@
 # ZhuaTech MCP Gateway
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 企业 Agent 的工具接入层：一处注册、统一授权、短期凭证、全程审计。
 
 ZhuaTech MCP Gateway 是上海如静知华信息科技有限公司推出的 MCP 服务治理开源参考工程。它不替代具体 MCP Server，而是在 Agent 与企业工具之间提供可靠的目录、策略和运行控制面。[了解知华科技](https://www.zhuatech.cn/)
