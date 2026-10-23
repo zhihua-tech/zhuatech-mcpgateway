@@ -1,0 +1,64 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "peakConcurrentCalls": "#20",
+      "maximumAttempts": "#40"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "concurrencyLimit": "19"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "writes": "YES"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "writes": "YES",
+      "approved": "YES"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "approvalExpiry": "2026-10-22"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "approvalExpiry": "2026-10-23"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "tools": "0"
+    },
+    "expected": {},
+    "error": true
+  }
+]
