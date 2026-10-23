@@ -1,0 +1,6 @@
+{
+  "patch": {
+    "concurrencyLimit": "19"
+  },
+  "description": "工具并发上限改为19"
+}
